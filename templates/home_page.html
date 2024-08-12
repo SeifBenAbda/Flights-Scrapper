@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% from "reusable_components/airport_field.html" import airport_input_widget %}
+{% from "reusable_components/date_picker.html" import date_picker_widget %}
+{% from "reusable_components/result_page.html" import flight_results %}
+
+{% block content %}
+
+    <header class="bg-grey text-white text-center pt-5 w-full">
+        <h1 class="text-background text-4xl font-bold">Find the Best Flight Deals with Flight Scraper</h1>
+        <p class="text-background mt-4 text-lg mb-2">Scraping the web to bring you the most affordable flights.</p>
+        <!--<a href="#features" class="bg-background mt-6 inline-block text-grey py-2 px-4 rounded">Learn More</a>-->
+        <br>
+        {% include 'components/platform_selection.html' %}
+
+        {% include 'components/full_search_components.html' %}
+
+    </header>
+
+    {{ flight_results() }}
+
+{% endblock %}

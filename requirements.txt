@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+selenium
+tabulate
+pytest
+dataclasses
+typing

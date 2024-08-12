@@ -1,0 +1,16 @@
+<div class="flex justify-center items-center">
+    <div>
+        <form>
+            <div class="flex justify-center items-center">
+                {{ airport_input_widget("Enter airport from", "Enter airport to") }}
+            </div>
+        </form>
+    </div>
+
+
+    <div class="w-1/5">
+        {{ date_picker_widget() }}
+    </div>
+
+    {% include 'components/search_btn.html' %}
+</div>

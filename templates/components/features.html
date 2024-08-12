@@ -1,0 +1,12 @@
+{% from "reusable_components/features_macro.html" import feature_card %}
+
+<section id="features" class="py-20">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-grey text-3xl font-bold mb-8">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {{ feature_card('Real-Time Data', 'Get the most up-to-date flight information and pricing from multiple airlines.') }}
+            {{ feature_card('Custom Alerts', 'Set up alerts for specific routes and receive notifications when prices drop.') }}
+            {{ feature_card('Easy to Use', 'An intuitive interface that makes finding flights easy and hassle-free.') }}
+        </div>
+    </div>
+</section>

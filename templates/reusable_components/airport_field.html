@@ -1,0 +1,15 @@
+{% macro airport_input_widget(from_placeholder, to_placeholder) %}
+    <div class="p-4 flex justify-center items-center">
+        <div class="flex items-center mr-4">
+            <input type="text" id="from" class="p-2 rounded-l-md focus:ring-0 focus:outline-none border-none text-background text-md
+            focus:border-transparent" placeholder="{{ from_placeholder }}" style="box-shadow: none;">
+            <span class="bg-background p-2 rounded-r-md">From</span>
+        </div>
+        <div class="flex items-center">
+            <input type="text" id="to"
+                   class="p-2 rounded-l-md focus:ring-0 focus:outline-none border-none focus:border-transparent text-background text-md"
+                   placeholder="{{ to_placeholder }}" style="box-shadow: none;">
+            <span class="bg-background p-2 rounded-r-md">To</span>
+        </div>
+    </div>
+{% endmacro %}
